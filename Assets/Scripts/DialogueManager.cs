@@ -151,6 +151,10 @@ namespace SmartNPC
             {
                 AddMessage(agent.NPCName, greeting, agent.profile.nameColor);
             }
+            else if (IsSilence(greeting))
+            {
+                Debug.Log($"[DialogueManager] {agent.NPCName} chose to stay silent on approach.");
+            }
         }
 
         /// <summary>
@@ -306,7 +310,10 @@ namespace SmartNPC
                     // Only display if the NPC chose to speak (not [SILENCE])
                     AddMessage(agent.NPCName, response, agent.profile.nameColor);
                 }
-                // If [SILENCE], NPC chose not to respond — show nothing
+                else
+                {
+                    Debug.Log($"[DialogueManager] {agent.NPCName} chose [SILENCE] in conversation.");
+                }
             });
         }
 
@@ -381,7 +388,7 @@ namespace SmartNPC
             msgText.supportRichText = true;
             msgText.horizontalOverflow = HorizontalWrapMode.Wrap;
             msgText.verticalOverflow = VerticalWrapMode.Overflow;
-            msgText.alignment = isPlayer ? TextAnchor.UpperRight : TextAnchor.UpperLeft;
+            msgText.alignment = TextAnchor.UpperLeft;
 
             string fullText = $"<color=#{ColorUtility.ToHtmlStringRGB(color)}><b>{sender}</b></color>：{text}";
             msgText.text = fullText;

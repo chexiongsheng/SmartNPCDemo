@@ -33,11 +33,12 @@ git submodule update --init --recursive
 以 `Unity_v3.0.1` 为例，下载地址：
 > https://github.com/Tencent/puerts/releases/tag/Unity_v3.0.1
 
-需要下载以下插件包，并将各自的 `Plugins` 目录内容放置到对应的 UPM 包路径下：
+需要下载以下三个插件包，并将各自的 `Plugins` 目录内容放置到对应的 UPM 包路径下：
 
 | 插件包 | 说明 | 放置路径 |
 |--------|------|----------|
 | **PuerTS-Core** | PuerTS 核心插件 | `puerts/unity/upms/core/Plugins/` |
+| **PuerTS-V8** | V8 引擎后端插件 | `puerts/unity/upms/v8/Plugins/` |
 | **PuerTS-Nodejs** | Node.js 后端插件 | `puerts/unity/upms/nodejs/Plugins/` |
 
 > ⚠️ **注意**：不要放到 `Assets/Plugins/`，应放到各 UPM 包自身的 `Plugins` 目录下。

@@ -35,7 +35,7 @@ Demo 中包含三个风格迥异的 NPC：
 本项目包含 Git submodule，克隆时请使用 `--recursive` 参数以同时拉取所有子模块：
 
 ```bash
-git clone --recursive <REPO_URL>
+git clone --recursive https://github.com/chexiongsheng/SmartNPCDemo.git
 ```
 
 如果已经克隆但忘记加 `--recursive`，可以补充初始化子模块：

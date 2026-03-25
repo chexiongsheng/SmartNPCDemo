@@ -97,3 +97,11 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# SmartNPC scene creator generated files
+/[Aa]ssets/Scenes/SmartNPCDemo.unity
+/[Aa]ssets/Scenes/SmartNPCDemo.unity.meta
+/[Aa]ssets/Resources/LLMConfig.asset
+/[Aa]ssets/Resources/LLMConfig.asset.meta
+/[Aa]ssets/Resources/NPCProfiles/
+/[Aa]ssets/Resources/NPCProfiles.meta

@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.puerts.agent": "file:../puerts/unity/upms/agent",
-    "com.puerts.mcp": "file:../puerts/unity/upms/mcp",
+    "com.tencent.puerts.agent": "file:../puerts/unity/upms/agent",
+    "com.tencent.puerts.mcp": "file:../puerts/unity/upms/mcp",
     "com.tencent.puerts.core": "file:../puerts/unity/upms/core",
     "com.tencent.puerts.nodejs": "file:../puerts/unity/upms/nodejs",
     "com.tencent.puerts.v8": "file:../puerts/unity/upms/v8",

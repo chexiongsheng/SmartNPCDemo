@@ -11227,6 +11227,18 @@
             protected [__keep_incompatibility]: never;
         }
     }
+    namespace System.Diagnostics {
+        class Debug extends System.Object
+        {
+            protected [__keep_incompatibility]: never;
+            public static Assert ($condition: boolean) : void
+            public static Assert ($condition: boolean, $message: string) : void
+            public static Assert ($condition: boolean, $message: string, $detailMessage: string) : void
+            public static Assert ($condition: boolean, $message: string, $detailMessageFormat: string, ...args: any[]) : void
+            public static Fail ($message: string) : void
+            public static Fail ($message: string, $detailMessage: string) : void
+        }
+    }
     namespace System.Security {
         interface IEvidenceFactory
         {
